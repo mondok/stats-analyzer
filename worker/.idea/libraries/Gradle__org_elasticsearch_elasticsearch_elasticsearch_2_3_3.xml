@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: org.elasticsearch:elasticsearch-elasticsearch:2.3.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Could not find org.elasticsearch:elasticsearch-elasticsearch:2.3.3.&#10;Searched in the following locations:&#10;    https:/repo1.maven.org/maven2/org/elasticsearch/elasticsearch-elasticsearch/2.3.3/elasticsearch-elasticsearch-2.3.3.pom&#10;    https:/repo1.maven.org/maven2/org/elasticsearch/elasticsearch-elasticsearch/2.3.3/elasticsearch-elasticsearch-2.3.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

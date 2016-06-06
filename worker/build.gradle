@@ -1,0 +1,23 @@
+plugins {
+    id 'scala'
+}
+
+group 'com.statsanalyzer'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile "org.scala-lang:scala-library:2.10.6"
+
+    compile 'org.scala-lang:scala-library:2.10.6'
+    compile 'org.apache.spark:spark-streaming_2.10:1.6.0'
+    compile 'org.apache.spark:spark-streaming-kafka_2.10:1.6.0'
+    compile 'org.apache.spark:spark-sql_2.10:1.6.0'
+    compile 'org.elasticsearch:elasticsearch-elasticsearch:2.3.3'
+    compile 'org.elasticsearch:elasticsearch-spark_2.10:5.0.0-alpha2'
+    compile group: 'com.databricks', name: 'spark-csv_2.10', version: '1.4.0'
+
+}
