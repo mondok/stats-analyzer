@@ -16,3 +16,4 @@ project/plugins/project/
 .scala_dependencies
 .worksheet
 .2015_stats/metastore_db
+metastore_db/
