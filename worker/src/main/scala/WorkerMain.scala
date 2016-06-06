@@ -11,6 +11,7 @@ object WorkerMain {
       .set("es.index.auto.create", "true")
       .set("es.nodes", "localhost")
       .set("es.port", "9200")
+      .set("es.nodes.wan.only", "true")
 
     val context = new SparkContext(sparkConf)
     val sqlContext = new org.apache.spark.sql.SQLContext(context)

@@ -2,12 +2,16 @@ version: '2'
 
 services:
 
-  # elasticsearch:
-  #   image: elasticsearch
-  #   restart: always
-  #   ports:
-  #     - "9200:9200"
-  #     - "9300:9300"
+  elasticsearch:
+    image: elasticsearch
+    restart: always
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+      - "5000:5000"
+    expose:
+      - 9200
+      - 9300
 
   master:
     image: gettyimages/spark
@@ -25,6 +29,7 @@ services:
       - 7006
       - 7077
       - 6066
+      - 8080
     ports:
       - 4040:4040
       - 6066:6066
@@ -51,6 +56,7 @@ services:
       - 7015
       - 7016
       - 8881
+      - 8081
     ports:
       - 8081:8081
     volumes:
