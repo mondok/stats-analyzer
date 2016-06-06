@@ -2,16 +2,16 @@ version: '2'
 
 services:
 
-  elasticsearch:
-    image: elasticsearch
-    restart: always
-    ports:
-      - "9200:9200"
-      - "9300:9300"
-      - "5000:5000"
-    expose:
-      - 9200
-      - 9300
+  # elasticsearch:
+  #   image: elasticsearch
+  #   restart: always
+  #   ports:
+  #     - "9200:9200"
+  #     - "9300:9300"
+  #     - "5000:5000"
+  #   expose:
+  #     - 9200
+  #     - 9300
 
   master:
     image: gettyimages/spark
