@@ -2,16 +2,16 @@ version: '2'
 
 services:
 
-  # elasticsearch:
-  #   image: elasticsearch
-  #   restart: always
-  #   ports:
-  #     - "9200:9200"
-  #     - "9300:9300"
-  #     - "5000:5000"
-  #   expose:
-  #     - 9200
-  #     - 9300
+  elasticsearch:
+    image: elasticsearch
+    restart: always
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+      - "5000:5000"
+    expose:
+      - 9200
+      - 9300
 
   master:
     image: gettyimages/spark
@@ -45,8 +45,8 @@ services:
     hostname: worker
     environment:
       SPARK_CONF_DIR: /conf
-      SPARK_WORKER_CORES: 2
-      SPARK_WORKER_MEMORY: 1g
+      SPARK_WORKER_CORES: 4
+      SPARK_WORKER_MEMORY: 4g
       SPARK_WORKER_PORT: 8881
       SPARK_WORKER_WEBUI_PORT: 8081
     expose:
@@ -62,6 +62,3 @@ services:
     volumes:
       - ./conf/worker:/conf
       - ./data:/tmp/data
-
-networks:
-  default:
